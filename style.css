@@ -1,0 +1,110 @@
+:root{
+    --borderRaduis : 12px;
+    /* Primary Colors */
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    /* Neutral Colors */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: var(--cream)
+}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    border-radius: var(--borderRaduis);
+    overflow: hidden;
+    margin-bottom: 24px;
+    background-color: var(--white);
+}
+.productImg{
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+}
+.detailsArea{
+    width: 50%;
+    padding: 24px;
+}
+.productType{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--darkGrayishBlue);
+    letter-spacing: 2px;
+}
+.title {
+    font-family: 'Fraunces', serif;
+    color: var(--veryDarkBlue);
+    margin-bottom: 16px;
+}
+.description{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--darkGrayishBlue);
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.currentPrice{
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    color: var(--darkCyan);
+    margin-right: 16px;
+}
+.oldPrice{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: var(--darkGrayishBlue);
+    text-decoration: line-through;
+}
+.addToCartBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--darkCyan);
+    border-radius: var(--borderRaduis);
+}
+.addToCartBtn img {
+    margin-right: 16px;
+    color: var(--white);
+}
+.addToCartBtn span a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--white);
+}
+.addToCartBtn:hover{
+    background-color: var(--veryDarkBlue);
+}
+.attribution p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--darkGrayishBlue);
+}
+.attribution p a {
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+}
